@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prabut</title>
+  <script src="https://kit.fontawesome.com/d3c750500c.js" crossorigin="anonymous"></script>
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+  <div id="particulas-js"></div>
+
+  <header  id="inicio">
+    <img src="images/hamburguesa.svg" class="hamburguesa" />
+    <nav class="menu-navegacion">
+      <a href="index.html">Inicio</a>
+      <a href="index.html#somos">Nosotros</a>
+      <a href="index.html#servicio">Servicios</a>
+      <a href="index.html#expertos">Expertos</a>
+      <a href="#contacto">Contacto</a>
+
+    </nav>
+
+    <div class="mini-menu">
+      <ul>
+        <li>
+          <a href="index.html#servicio"><i class="fas fa-brain"></i><span>Nuestro servicios</span></a>
+        </li>
+        <li>
+          <a href=""><i class="fas fa-dollar-sign"></i><span>Suscripciòn</span> </a>
+        </li>
+        <li>
+          <span><i class="fas fa-share-alt"></i></span>
+          <span class="redes-sociales">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+
+    <!-- --========----FORMULARIO-----========------ -->
+
+    <div class="container">
+
+        <!-- ---------PARTICULAS -------------- -->
+      <div class="burbujas">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+      </div>
+
+      <div class="form-box">
+        <!-- <label for="show" class="close-btn" title="close">&times;</label> -->
+        <div class="encabezado">
+          <img src="./images/logo-plateado.png" alt="">
+        </div>
+  
+        <div class="button-box">
+          <div class="elegir" id="elegir"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Iniciar Sesion</button>
+            <button type="button" class="toggle-btn" onclick="register()"  >Registrar</button>
+        </div>
+  
+        <!-- ---------INICIAR SESION-------------- -->
+        <form id="login" class="input-group">
+          <label for=""> Email
+            <input type="email" class="input-field" name="email" id="nombre" placeholder="ejemplo@mail.com" required>
+          </label>
+          <label for="">Contraseña
+            <input type="password" class="input-field" name="password" id="password" placeholder="Contraseña" required>
+          </label>
+          <label for="">
+            <input type="checkbox" name="" id="" class="check-box"><span>Recordar contraseña</span>
+          </label>
+          <button type="submit" class="submit-btn">Acceder</button>
+        </form>
+        <!-- ---------REGISTRARSE-------------- -->
+  
+        <form id="register" class="input-group">
+          <label for="">Nombre
+            <input type="text" class="input-field" name="nombre" id="nombre" placeholder="Nombre del usuario" required>
+          </label>
+          <label for="">Email
+            <input type="email" class="input-field" name="nombre" id="email" placeholder="ejemplo@mail.com" required>
+          </label>
+          <label for="">Contraseña
+            <input type="password" class="input-field" name="password" id="password" placeholder="Contraseña" required>
+          </label>
+          <div class="link"> Al registrarse acepta nuestros <a href="#">Tèrminos de servicio</a> y <a href="#">Politica de Privacidad</a></div>
+          <button type="submit" class="submit-btn">Registrarse</button>
+        </form>
+      </div>
+    </div>
+    
+  </main>
+    
+  <!-- ======Scripts de particulas =================== -->
+
+  <!-- ----------------------------------------------- -->
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="js/menu.js"></script>
+</body>
+
+</html>
