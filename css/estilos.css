@@ -491,6 +491,7 @@ footer{
   .home-main section{
     display: grid;
     grid-column: 1;
+    gap: 20px;
     justify-items: center;
     height: 100%;
     align-items: center;
