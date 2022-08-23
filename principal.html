@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pagina Web</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://kit.fontawesome.com/d3c750500c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="navegacion">
+      <div>
+        <a href="index.html"><img class="logo" src="img/Logo-3.png" alt="logo de la empresa"></a>
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="navegacion-contenedor" aria-expanded="false">
+        <span class="sr-only"> MENU</span>
+      </button>
+
+      <div class="navegacion-contenedor" data-visible="false" id="navegacion-contenedor">
+        <div class="barra1">
+          <nav>
+            <div>
+              <ul class="menu-horizontal">
+                <li><a href="">English</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="barra2">
+          <nav>
+            <div>
+              <ul class="menu-horizontal">
+                <li><a href="principal.html">Inicio</a></li>
+                <li><a href="#">Servicios</a>
+                  <ul class="menu-vertical">
+                    <li><a href="#cienciadedatos">Ciencia de Datos</a></li>
+                    <li><a href="#criptomonedas">Criptomonedas</a></li>
+                    <li><a href="#blockchain">Blockchain</a></li>
+                    <li><a href="#talento">Talento Humano</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Planes</a>
+                  <ul class="menu-vertical">
+                    <li><a href="">Plan 1</a></li>
+                    <li><a href="">Plan 2</a></li>
+                    <li><a href="">Plan 4</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Contacto</a>
+                  <ul class="menu-vertical">
+                    <li><a href="#">Correo electrónico</a></li>
+                    <li><a href="#">whatsapp</a></li>
+                  </ul>
+                </li>
+                <li><a href="iniciarSesion.html">Iniciar Sesión</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- -------------SLIDER------------------ -->
+    <div class="slider">
+      <div class="myslider" style="display: block;">
+        <div class="txt">
+          <h2>Actualizaciones</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <a class="boton" href="#">comienza ahora</a>
+        </div>
+        <img src="img/inteligencia-artificial.webp" alt="" style="width: 100%; height: 100%;">
+      </div>
+      <div class="myslider fade">
+        <div class="txt">
+          <h2>Hello world</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <a class="boton" href="#">comienza ahora</a>
+        </div>
+        <img src="img/red.webp" alt="" style="width: 100%; height: 100%;">
+      </div>
+      <div class="myslider fade">
+        <div class="txt">
+          <h2>Actualizaciones</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <a class="boton" href="#">comienza ahora</a>
+        </div>
+        <img src="img/blockchain.webp" alt="" style="width: 100%; height: 100%;">
+      </div>
+      <div class="myslider fade">
+        <div class="txt">
+          <h2>Actualizaciones</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <a class="boton" href="#">comienza ahora</a>
+        </div>
+        <img src="img/data-science.webp" alt="" style="width: 100%; height: 100%;">
+      </div>
+      <div class="myslider fade">
+        <div class="txt">
+          <h2>Actualizaciones</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <a class="boton" href="#">comienza ahora</a>
+        </div>
+        <img src="img/neuronal1.webp" alt="" style="width: 100%; height: 100%;">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="dotsbox" style="text-align: center;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="parallax">
+    <div class="contenedor ">
+    </div>
+  </section>
+
+  <main class="index-main">
+
+    <!-- --------------CIENCIA DE DATOS -->
+
+    <section class="services-container" id="data-science">
+      <div class="grid-container services-main">
+        <div class="services-img-container">
+          <img src="img/data-science.webp" alt="">
+        </div>
+        <div class="services-info-container">
+          <h2>Ciencia de Datos</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eos quia tenetur quas praesentium
+            nulla aliquid, distinctio veritatis omnis assumenda, perferendis minus ut molestiae iure.</p>
+          <a href="" class="boton">Leer más</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="parallax" id="cienciadedatos">
+      <div class="contenedor ">
+      </div>
+    </section>
+
+    <!-- ----------------CRIPTOMOMEDAS--------------- -->
+
+    <section class="services-container" id="criptomonedas">
+      <div class="grid-container services-main2">
+        <div class="services-info-container2">
+          <h2>Criptomonedas</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eos quia tenetur quas praesentium
+            nulla aliquid, distinctio veritatis omnis assumenda, perferendis minus ut molestiae iure.</p>
+          <a href="" class="boton">Leer más</a>
+        </div>
+        <div class="services-img-container2">
+          <img src="img/criptomonedas.webp" alt="">
+        </div>
+      </div>
+    </section>
+
+
+    <section class="parallax">
+      <div class="contenedor ">
+      </div>
+    </section>
+    <!-- ---------------BLOCKCHAIN-------------------- -->
+
+    <section class="services-container" id="blockchain">
+      <div class="grid-container services-main">
+        <div class="services-img-container">
+          <img src="img/blockchain.webp" alt="">
+        </div>
+        <div class="services-info-container">
+          <h2>Blokchain</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eos quia tenetur quas praesentium
+            nulla aliquid, distinctio veritatis omnis assumenda, perferendis minus ut molestiae iure.</p>
+          <a href="" class="boton">Leer más</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="parallax">
+      <div class="contenedor ">
+      </div>
+    </section>
+    <!-- -------------------AULA VIRTUAL----------------- -->
+    <section class="services-container">
+      <div class="grid-container services-main2">
+        <div class="services-info-container2">
+          <h2>Talento Humano</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eos quia tenetur quas praesentium
+            nulla aliquid, distinctio veritatis omnis assumenda, perferendis minus ut molestiae iure.</p>
+          <a href="iniciarSesion.html" class="boton">Entrar</a>
+        </div>
+        <div class="services-img-container2" id="talento">
+          <img src="img/e-learning.webp" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="parallax">
+      <div class="contenedor ">
+      </div>
+    </section>
+  </main>
+  <!-- ------------------FOOTER--------------- -->
+  <footer>
+    <div class="partFooter">
+      <img src="img/Logo-3.png" alt="Logo de la empresa">
+    </div>
+    <div class="partFooter">
+      <h4>Servicios</h4>
+      <a href="#cienciadedatos">Ciencia de Datos</a>
+      <a href="#criptomonedas">Criptomonedas</a>
+      <a href="#blockchain">Blockchain</a>
+      <a href="#talento">Talento Humano</a>
+    </div>
+    <div class="partFooter">
+      <h4>Acerca de</h4>
+      <a href="#">Somos</a>
+      <a href="#">Valores</a>
+      <a href="#">About us</a>
+    </div>
+    <div class="partFooter">
+      <h4>Redes Sociales</h4>
+      <div class="social-media">
+        <ul class="social-icons">
+          <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter"></i></i></a></li>
+          <li><a href=""><i class="fab fa-instagram"></i></i></a></li>
+          <li><a href=""><i class="fab fa-linkedin-in"></i></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- ---------SCRIPTS---------- -->
+
+  <!-- ---------Slider---------- -->
+  <script src="js/nav.js"></script>
+  <!-- ---------Slider---------- -->
+  <script src="js/archivo.js"></script>
+</body>
+
+</html>

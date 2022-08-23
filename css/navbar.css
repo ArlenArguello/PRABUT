@@ -1,0 +1,118 @@
+.topheader{
+    /* box-shadow: 0 4px 5px var(--color-navbar-sombra); */
+    position: fixed;
+    /* background-color: var(--color-fondo); */
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: black;
+        
+    
+    }
+    
+    .topnav{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        max-width: 980px;
+        margin: 0 auto ;
+        z-index: 10;
+    }
+     
+    /*-------------- LOGO-------- */
+    .logo{
+        display: flex;
+        align-items: center;
+        color: var(--color-principal);
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    
+    .menu{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    .menu li{
+        padding: 0 15px;
+    }
+    
+    .menu a{
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+    
+    .menu a:hover,
+    .menu a.active{
+        color: var(--color-principal);
+        font-weight: 600;
+        
+    }
+    
+    .open-menu,
+    .close-menu {
+        display: none;
+    }
+    
+    /* ------------MEDIA QUERY------ */
+    
+    @media (max-width: 950px){
+        
+        
+    
+        .menu{
+            flex-direction: column;
+            position: fixed;
+            left: 0;
+            top: 0px;
+            width: 100%;
+            align-items: center;
+            background-color: #64C9CF;
+            height: 100%;
+            overflow-y: auto;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s;
+        }
+        
+        
+        .menu li{
+            padding: 0;
+        }
+        
+        .menu a{
+            color: var(--color-fondo);
+            line-height: 60px;
+        }
+        
+        .open-menu,
+        .close-menu {
+        display: block;
+        border: none;
+        cursor: pointer;
+        /* z-index: 20; */
+        }   
+    
+        .close-menu {
+            align-self: flex-end ;
+            padding: 20px 15px;
+            background-color: #64C9CF;
+    
+        }
+    
+        .menu_opened{
+            opacity: 1;
+            pointer-events: all;
+        }
+    
+        .fa-portrait{
+            display: none;
+        }
+    }

@@ -1,0 +1,343 @@
+*{
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+
+}
+html{
+    overflow: hidden;
+   
+}
+
+
+.navbar2{
+    flex: 1;
+    text-align: center;
+    user-select: none;
+
+
+}
+.navbar2 ul li{
+    margin: 1rem 0;
+    list-style: none;
+    justify-content: center;
+}
+
+
+.navbar2 ul li a{
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+}
+
+.navbar2 ul li a:hover{
+    background: cyan;
+    transition: none;
+    font-weight: 600;
+
+}
+.navbar2 ul li a.active{
+    background: cyan;
+    font-weight: 600;
+
+}
+
+
+
+.previous-page, .next-page{
+    background: cyan;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.tituloProtocolos{
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+
+
+
+
+.fa-portrait{
+   font-size: 40px;
+   color: var(--color-principal);
+}
+
+ h1{
+    color: var(--color-principal);
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    
+
+}
+.tituloModulo{
+    text-transform: uppercase;
+    margin: 10px;
+    padding-right: 17px;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    letter-spacing: 25px;
+}
+
+h2{
+    color: cyan;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+h3{
+    color: var(--color-principal);
+    font-weight: 600;
+}
+
+.card h3{
+    color: #1597BB;
+}
+
+main{
+    min-height: 110vh;
+    /* background: linear-gradient(to right top, #65dfc9, #6cdbeb ); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.glass{
+    background: white ;
+    min-height: 70vh;
+    width: 90%;
+    background:linear-gradient(to right bottom, 
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3) );
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+}
+
+.cirle1, .cirle2{
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    
+}
+
+.cirle1{
+    top: 12%;
+    right: 1%;
+    background: linear-gradient(#F0A500, var(--color-principal));
+    
+}
+
+.cirle2 {
+    bottom: 5%;
+    left: 1%;
+    background: linear-gradient(#83d8ff, #2196f3);
+
+}
+
+/* .navegacion{
+    position: fixed;
+    width: 12rem;
+    height: 83%;
+    color: violet;
+    background:linear-gradient(to right bottom, 
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3) );
+    border-radius: 15px;
+    padding: 3rem;
+    flex: 1;
+    transition: 0.5s;
+} */
+
+
+
+.navegacion ul{
+    position: absolute;
+    left: 0;
+    width: 20%;
+    
+}
+
+.navegacion{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navegacion ul li{
+    list-style: none;
+}
+
+.navegacion ul li:hover {
+    background: cyan;
+}
+
+/* .navegacion ul li a{
+    display: flex;
+    text-decoration: none;
+} */
+
+.titulo{
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    padding-left: 1rem;
+    font-size:20px ;
+}
+
+.modulo1{
+    flex: 3;
+    margin: 2rem 5rem;
+    display: grid;
+    line-height: 30px;
+    
+}
+
+.protocolo-cards{
+    place-items: center;
+    background-color: aqua;
+    /* overflow: hidden; */
+
+}
+
+.cards{
+    
+    display: flex;
+    --distance: -4rem;
+    line-height: 18px;
+}
+
+.card{
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 25px 45px rgba( 0, 0, 0, 0.2);
+    margin-left:-4rem ;
+    transition: 0.2s;
+    
+}
+
+.card:not(:first-child){
+    margin-left: var(--distance);
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card:hover ~ .card{
+    transform: translateX(calc(var(--distance)*-1));
+}
+
+
+.card i{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.protocolo2{
+    min-height: 100%;
+}
+
+@media (max-width: 950px){
+    .navegacion{
+        display: none;
+    }
+
+    html{
+        overflow: visible;
+    }
+    .tituloModulo{
+        display: none;
+    }
+    .navbar2{
+        display: none;
+    }
+
+     .modulo1{
+        text-align: center;
+
+     } 
+     .protocolo1{
+         min-height: 100%;
+     }
+
+     .cards{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-gap: 15px;
+     }
+
+     .card{
+    margin-left: -0.5rem ;
+    text-align: center;
+    width: 150px;
+
+
+     }
+     
+
+     .card:not(:first-child){
+        margin-left: 0;
+    }
+    
+    .card:hover {
+        transform: none;
+    }
+    
+    .card:hover ~ .card{
+        transform: none;
+    }
+    
+    
+
+    .card i{
+        font-size: 50px;
+        text-align: center;
+        padding-top: 30px;
+    }
+}
+
+
+
+@media (max-width: 768px){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media (max-width: 650px){
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+   .card{
+    width: auto;
+
+   } 
+}

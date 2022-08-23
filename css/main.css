@@ -1,0 +1,226 @@
+:root{
+    --color-principal: #ef6933;
+    --color-secundario: #F0A500;
+    --color-fondo: white;
+    --color-fondo-modo-osucro: #082032;
+    --color-fondo-modo-osucro-light: #334756;
+    --color-texto: black;
+    --color-navbar-sombra: #e5e5e5;
+
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#000000, #92A9BD);
+    color: var(--color-texto);
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-texto);
+
+}
+
+main{
+    min-height: 110vh;
+    /* background: linear-gradient(to right top, #65dfc9, #6cdbeb ); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     min-height:800px;
+    padding: 20px;
+    width: 100%;
+    
+} 
+logo img{
+    width: 350px;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 25px 45px rgba( 0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+}
+
+
+
+.container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.container .row100{
+    position: relative;
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); */
+
+}
+
+.container .row100 .col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom:40px;
+}
+
+.container .row100 .col .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+.bienvenida{
+    display: flex;
+}
+
+
+
+.container .row100 .col .inputBox input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+    
+}
+
+.container .row100 .col .inputBox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.container .row100 .col .inputBox input:focus + .text,
+.container .row100 .col .inputBox input:valid + .text{
+    top: -35px;
+    left: -10px;
+    
+}
+
+.container .row100 .col .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--color-fondo);
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.container .row100 .col .inputBox input:focus ~ .line, 
+.container .row100 .col .inputBox input:valid ~ .line {
+    height: 100%;
+}
+
+.container .row100 .col button[type="submit"]{
+    border: none;
+    padding: 10px ;
+    cursor: pointer;
+    outline: none;
+    background: #BD1A26;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+.cirle1, .cirle2{
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    
+}
+
+.cirle1{
+    top: 12%;
+    right: 1%;
+    background: linear-gradient(#F0A500, var(--color-principal));
+    
+}
+
+.cirle2 {
+    bottom: 5%;
+    left: 1%;
+    background: linear-gradient(#83d8ff, #2196f3);
+
+}
+
+@media (max-width: 900px) {
+    .inicio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .inicio::before {
+        width: 250px;
+        height: 250px;
+        transform: translate(-200px, -180px);
+    }
+    .inicio::after {
+        width: 300px;
+        height: 300px;
+        transform: translate(200px, 180px);
+    }
+    .inicio img{
+        width: 200px;
+        align-items: center;
+
+    }
+   
+
+    .container{
+        
+        grid-template-columns: 1fr ;
+
+        padding: 20px;
+    }
+
+    .container h2{
+        font-size: 18px;
+        text-align: center;
+    }
+    .container h3{
+        font-size: 14px;
+        text-align: center;
+    }
+    .cirle1, .cirle2{
+        width: 200px;
+        height: 200px;
+    }
+}
